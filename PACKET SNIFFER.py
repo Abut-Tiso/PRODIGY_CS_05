@@ -38,7 +38,7 @@ def packet_callback(packet):
 
         # Check for TCP/UDP protocols
         if TCP_protocol == 6 and TCP in packet:  # TCP Protocol
-            print(f"Protocol: TCP")vcs
+            print(f"Protocol: TCP")
             print(f"Payload: {bytes(packet[TCP].payload)}")
 
         elif TCP_protocol == 17 and UDP in packet:  # UDP Protocol
